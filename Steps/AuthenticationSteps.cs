@@ -19,11 +19,11 @@ namespace APIAutomation_YG.Steps
         /// This is the constructor for this binding class where the context is injected here.......
         /// 4565456
         /// </summary>
-        /// <param name="settings"></param>
+        /// 
         public AuthenticationSteps(Settings settings)
         {
             _settings = settings;
-        }
+        } 
 
         [Then(@"I should have the response with status code (.*)")]
         public void ThenIShouldHaveTheFollowingResponseWithStatusCode(string statusCode)
@@ -52,7 +52,7 @@ namespace APIAutomation_YG.Steps
                 {
                     var rand = new Random();
                     int num = rand.Next(100000);
-                    _settings.Request.AddParameter(row[0], row[1] + num);
+                    _settings.Request.AddParameter(row[0], row[1] + num); //add body
                     ScenarioContext.Current.Add(row[0], row[1] + num);
                 }
             }
@@ -65,5 +65,7 @@ namespace APIAutomation_YG.Steps
             }
 
         }
+        
+
     }
 }

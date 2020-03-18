@@ -19,8 +19,4 @@
     <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.1.86" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="NewFolder\" />
-  </ItemGroup>
-
 </Project>
