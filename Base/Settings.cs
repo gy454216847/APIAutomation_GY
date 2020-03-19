@@ -5,7 +5,7 @@ using System.Text;
 
 namespace APIAutomation_YG.Base
 {
-    class Settings
+    public class Settings
     {
         public Uri BaseUrl { get; set; }
         public IRestResponse Response { get; set; }

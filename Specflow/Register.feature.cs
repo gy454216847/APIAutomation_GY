@@ -111,18 +111,18 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                             "key",
                             "value"});
-                table1.AddRow(new string[] {
+                table2.AddRow(new string[] {
                             "username",
                             "username"});
-                table1.AddRow(new string[] {
+                table2.AddRow(new string[] {
                             "password",
                             "password"});
 #line 8
  testRunner.Given("I perform a RegisterUser POST operation for e-store/authentication/register with " +
-                        "body", ((string)(null)), table1, "Given ");
+                        "body", ((string)(null)), table2, "Given ");
 #line hidden
 #line 12
  testRunner.Then("I should have the response with status code OK", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");

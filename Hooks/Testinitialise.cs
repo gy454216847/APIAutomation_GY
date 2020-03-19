@@ -2,7 +2,7 @@
 using TechTalk.SpecFlow;
 using APIAutomation_YG.Base;
 
-namespace APIAutomation_EJ.Hooks
+namespace APIAutomation_YG.Hooks
 {
     [Binding]
     public class TestInitialise
